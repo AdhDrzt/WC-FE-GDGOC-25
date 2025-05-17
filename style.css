@@ -2,7 +2,9 @@ body{
     background-color: #1f1f1f;
     overflow-x: hidden;
 }
-
+html{
+  overflow-x: hidden;
+}
 h1{
   font-family: "Radio Canada", sans-serif;
 }
@@ -136,13 +138,21 @@ img {
 }
 
 .nav__logo {
-  color: rgb(104, 104, 104);
-  font-size: 40px;
+  color: rgb(0, 140, 255);
+  font-size: 30px;
 }
 
 .nav__item {
   margin-bottom: 2rem;
   font-size: 15px;
+}
+.nav__item a{
+  transition: 0.5s;
+}
+.nav__item a:hover{
+  text-decoration: underline;
+  color: white;
+  border-radius: 5px;
 }
 
 .nav__link {
@@ -483,6 +493,7 @@ img {
  .container-portofolio{
    background-image: url(img/bg-port.png);
    background-size:cover;
+    padding: 7%;
  }
  .portofolio-design{
   margin-top: 200px;
