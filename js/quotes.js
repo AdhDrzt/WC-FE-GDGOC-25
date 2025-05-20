@@ -4,7 +4,7 @@ async function fetchQuote() {
     button.textContent = "Loading...";
   
     try {
-      const response = await fetch("https://api.quotable.io/random");
+      const response = await fetch("https://type.fit/api/quotes");
       const data = await response.json();
       document.getElementById("quote").textContent = `"${data.content}"`;
       document.getElementById("author").textContent = `– ${data.author}`;
